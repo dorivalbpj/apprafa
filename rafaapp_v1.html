@@ -43,31 +43,31 @@
             </div>
 
             <!-- Form -->
-            <form action="#!">
+            <form method="post" action="form.php">
               <div class="row gy-3 gy-md-4 overflow-hidden">
 
                 <!-- Cliente -->
                 <div class="col-12">
-                  <label for="firstName" class="form-label">Cliente </label>
-                  <input type="Usuário" class="form-control" name="firstName" id="firstName" placeholder="Cliente" required>
+                  <label for="cliente" class="form-label">Cliente </label>
+                  <input type="cliente" class="form-control" name="cliente" id="cliente" placeholder="Cliente" required>
                 </div>    
 
                 <!-- Placa -->
                 <div class="row gy-md-2">
                     <div class="col-4">
-                        <label for="lastName" class="form-label">Placa </label>
-                        <input type="Usuário" class="form-control" name="lastName" id="lastName" placeholder="Placa" required>
+                        <label for="placa" class="form-label">Placa </label>
+                        <input type="placa" class="form-control" name="placa" id="placa" placeholder="Placa" required>
                     </div>
                     <div class="col-8">
-                        <label for="lastName" class="form-label">Usuário </label>
-                        <input type="Usuário" class="form-control" name="lastName" id="lastName" placeholder="Usuário" required>
+                        <label for="usuario" class="form-label">Usuário </label>
+                        <input type="usuario" class="form-control" name="usuario" id="usuario" placeholder="Usuário" required>
                     </div>
                 </div>
 
                 <!-- Endereço -->
                 <div class="col-12">
-                  <label for="End. Entrega" class="form-label">Endereço de entrega </label>
-                  <input type="End. Entrega" class="form-control" name="End. Entrega" id="End. Entrega" value="" required>
+                  <label for="end_entrega" class="form-label">Endereço de entrega </label>
+                  <input type="end_entrega" class="form-control" name="end_entrega" id="end_entrega" value="" required>
                 </div>
 
                 <!-- Saida -->
@@ -82,12 +82,12 @@
 
                 <div class="row gy-md-2">
                 <div class="col-4">
-                    <label for="lastName" class="form-label">Data da saida</label>
-                    <input type="Usuário" class="form-control" name="lastName" id="lastName" placeholder="00/00/00" required>
+                    <label for="dt_saida" class="form-label">Data da saida</label>
+                    <input type="dt_saida" class="form-control" name="dt_saida" id="dt_saida" placeholder="00/00/00" required>
                 </div>
                 <div class="col-4">
-                    <label for="lastName" class="form-label">Hora da saida </label>
-                    <input type="Usuário" class="form-control" name="lastName" id="lastName" placeholder="00:00" required>
+                    <label for="hr_saida" class="form-label">Hora da saida </label>
+                    <input type="hr_saida" class="form-control" name="hr_saida" id="hr_saida" placeholder="00:00" required>
                 </div>
                 </div>
 
@@ -175,20 +175,20 @@
                             <div class="col-4">Faróis Aux.</div>
                         
                             <div class="form-check col-2">
-                                <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                                <label class="form-check-label" for="exampleRadios1">
+                                <input class="form-check-input" type="radio" name="farois" id="farois1" value="farois1">
+                                <label class="form-check-label"  >
                                     Sim
                                 </label>
                                 </div>
                                 <div class="form-check col-2">
-                                <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                                <label class="form-check-label" for="exampleRadios2">
+                                <input class="form-check-input" type="radio" name="farois" id="farois2" value="farois2">
+                                <label class="form-check-label" >
                                     Não
                                 </label>
                                 </div>
                                 <div class="form-check col-4">
-                                <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                                <label class="form-check-label" for="exampleRadios3">
+                                <input class="form-check-input" type="radio" name="farois" id="farois3" value="farois3" checked>
+                                <label class="form-check-label" >
                                     Inexistente
                                 </label>
                                 </div>
@@ -204,20 +204,20 @@
                           <div class="col-4">Calotas</div>
                       
                           <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="Calotas1" id="Calotas1" value="Calotas1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <input class="form-check-input" type="radio" name="Calotas" id="Calotas1" value="Calotas1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="Calotas2" id="Calotas2" value="Calotas2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <input class="form-check-input" type="radio" name="Calotas" id="Calotas2" value="Calotas2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
-                              <input class="form-check-input" type="radio" name="Calotas3" id="Calotas3" value="Calotas3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <input class="form-check-input" type="radio" name="Calotas" id="Calotas3" value="Calotas3" checked>
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -233,20 +233,20 @@
                           <div class="col-4">Rodas</div>
                       
                           <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="Rodas" id="Rodas" value="Rodas">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <input class="form-check-input" type="radio" name="Rodas" id="Rodas1" value="Rodas1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="Rodas" id="Rodas" value="Rodas">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <input class="form-check-input" type="radio" name="Rodas" id="Rodas3" value="Rodas4">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
-                              <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <input class="form-check-input" type="radio" name="Rodas" id="Rodas3" value="Rodas3" checked>
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -262,20 +262,20 @@
                           <div class="col-4">Alarme</div>
                       
                           <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <input class="form-check-input" type="radio" name="Alarme" id="Alarme1" value="Alarme1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <input class="form-check-input" type="radio" name="Alarme" id="Alarme2" value="faroiAlarme1s2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
-                              <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <input class="form-check-input" type="radio" name="Alarme" id="Alarme3" value="Alarme4" checked>
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -288,23 +288,23 @@
                 <div class="row gy-md-2">
                   <div class="container">
                       <div class="row">
-                          <div class="col-4">farois</div>
+                          <div class="col-4">Acendedor</div>
                       
                           <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <input class="form-check-input" type="radio" name="Acendedor" id="Acendedor1" value="Acendedor1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <input class="form-check-input" type="radio" name="Acendedor" id="Acendedor2" value="Acendedor2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
-                              <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <input class="form-check-input" type="radio" name="Acendedor" id="Acendedor3" value="Acendedor3" checked>
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -317,23 +317,23 @@
                 <div class="row gy-md-2">
                   <div class="container">
                       <div class="row">
-                          <div class="col-4">farois</div>
+                          <div class="col-4">TAG-Placa</div>
                       
                           <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <input class="form-check-input" type="radio" name="TAG" id="TAG1" value="TAG1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <input class="form-check-input" type="radio" name="TAG" id="TAG2" value="TAG2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
-                              <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <input class="form-check-input" type="radio" name="TAG" id="TAG3" value="TAG2" checked>
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -346,23 +346,23 @@
                 <div class="row gy-md-2">
                   <div class="container">
                       <div class="row">
-                          <div class="col-4">farois</div>
+                          <div class="col-4">Cartão Combus.</div>
                       
                           <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <input class="form-check-input" type="radio" name="cartao" id="cartao1" value="cartao1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <input class="form-check-input" type="radio" name="cartao" id="cartao2" value="cartao2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
-                              <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <input class="form-check-input" type="radio" name="cartao" id="cartao3" value="cartao3" checked>
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -375,23 +375,23 @@
                 <div class="row gy-md-2">
                   <div class="container">
                       <div class="row">
-                          <div class="col-4">farois</div>
+                          <div class="col-4">Rádio / CD </div>
                       
                           <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <input class="form-check-input" type="radio" name="radio" id="radio1" value="radio1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <input class="form-check-input" type="radio" name="radio" id="radio2" value="radio2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
-                              <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <input class="form-check-input" type="radio" name="radio" id="radio3" value="radio3" checked>
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -404,23 +404,23 @@
                 <div class="row gy-md-2">
                   <div class="container">
                       <div class="row">
-                          <div class="col-4">farois</div>
+                          <div class="col-4">Multimídia</div>
                       
                           <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <input class="form-check-input" type="radio" name="multimidia" id="multimidia1" value="multimidia1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <input class="form-check-input" type="radio" name="multimidia" id="multimidia2" value="multimidia2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
-                              <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <input class="form-check-input" type="radio" name="multimidia" id="multimidia3" value="multimidia3" checked>
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -433,23 +433,23 @@
                 <div class="row gy-md-2">
                   <div class="container">
                       <div class="row">
-                          <div class="col-4">farois</div>
+                          <div class="col-4">Encosto c/ DVD</div>
                       
                           <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <input class="form-check-input" type="radio" name="dvd" id="dvd1" value="dvd1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <input class="form-check-input" type="radio" name="dvd" id="dvd2" value="dvd2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
-                              <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <input class="form-check-input" type="radio" name="dvd" id="dvd3" value="dvd3" checked>
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -462,23 +462,23 @@
                 <div class="row gy-md-2">
                   <div class="container">
                       <div class="row">
-                          <div class="col-4">farois</div>
+                          <div class="col-4">Tapetes</div>
                       
                           <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <input class="form-check-input" type="radio" name="Tapetes" id="Tapetes1" value="Tapetes1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <input class="form-check-input" type="radio" name="Tapetes" id="Tapetes2" value="Tapetes2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
-                              <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <input class="form-check-input" type="radio" name="Tapetes" id="Tapetes3" value="Tapetes3" checked>
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -491,23 +491,23 @@
                 <div class="row gy-md-2">
                   <div class="container">
                       <div class="row">
-                          <div class="col-4">farois</div>
+                          <div class="col-4">Manual(Manut.)</div>
                       
                           <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <input class="form-check-input" type="radio" name="Manual" id="Manual" value="Manual">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <input class="form-check-input" type="radio" name="Manual" id="Manual2" value="Manual2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
-                              <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <input class="form-check-input" type="radio" name="Manual" id="Manual3" value="Manual3" checked>
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -520,23 +520,23 @@
                 <div class="row gy-md-2">
                   <div class="container">
                       <div class="row">
-                          <div class="col-4">farois</div>
+                          <div class="col-4">DUT Original</div>
                       
                           <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <input class="form-check-input" type="radio" name="DUT" id="DUT1" value="DUT1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <input class="form-check-input" type="radio" name="DUT" id="DUT2" value="DUT2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
-                              <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <input class="form-check-input" type="radio" name="DUT" id="DUT3" value="DUT3" checked>
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -549,23 +549,23 @@
                 <div class="row gy-md-2">
                   <div class="container">
                       <div class="row">
-                          <div class="col-4">farois</div>
+                          <div class="col-4">Extintor</div>
                       
                           <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <input class="form-check-input" type="radio" name="Extintor" id="Extintor1" value="Extintor1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <input class="form-check-input" type="radio" name="Extintor" id="Extintor2" value="Extintor2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
-                              <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <input class="form-check-input" type="radio" name="Extintor" id="Extintor3" value="Extintor3" checked>
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -578,23 +578,23 @@
                 <div class="row gy-md-2">
                   <div class="container">
                       <div class="row">
-                          <div class="col-4">farois</div>
+                          <div class="col-4">Estepe</div>
                       
                           <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <input class="form-check-input" type="radio" name="Estepe" id="Estepe1" value="Estepe1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <input class="form-check-input" type="radio" name="Estepe" id="Estepe2" value="Estepe2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
-                              <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <input class="form-check-input" type="radio" name="Estepe" id="Estepe3" value="Estepe3" checked>
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -611,19 +611,19 @@
                       
                           <div class="form-check col-2">
                               <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
                               <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
                               <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -640,19 +640,19 @@
                       
                           <div class="form-check col-2">
                               <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
                               <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
                               <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -669,19 +669,19 @@
                       
                           <div class="form-check col-2">
                               <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
                               <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
                               <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
@@ -698,19 +698,19 @@
                       
                           <div class="form-check col-2">
                               <input class="form-check-input" type="radio" name="farois1" id="farois1" value="farois1">
-                              <label class="form-check-label" for="exampleRadios1">
+                              <label class="form-check-label" >
                                   Sim
                               </label>
                               </div>
                               <div class="form-check col-2">
                               <input class="form-check-input" type="radio" name="farois2" id="farois2" value="farois2">
-                              <label class="form-check-label" for="exampleRadios2">
+                              <label class="form-check-label" >
                                   Não
                               </label>
                               </div>
                               <div class="form-check col-4">
                               <input class="form-check-input" type="radio" name="farois3" id="farois3" value="farois3" checked>
-                              <label class="form-check-label" for="exampleRadios3">
+                              <label class="form-check-label" >
                                   Inexistente
                               </label>
                               </div>
