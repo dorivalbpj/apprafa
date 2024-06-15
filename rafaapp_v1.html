@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Checklist</title>
 
-    <script src="script.js"></script>
+    <!--  <script src="script.js"></script>
+     -->
 
     <!-- Font -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -49,18 +50,18 @@
                 <!-- Cliente -->
                 <div class="col-12">
                   <label for="cliente" class="form-label">Cliente </label>
-                  <input type="cliente" class="form-control" name="cliente" id="cliente" placeholder="Cliente" required>
+                  <input type="text" class="form-control" name="cliente" id="cliente" placeholder="Cliente" required>
                 </div>    
 
                 <!-- Placa -->
                 <div class="row gy-md-2">
                     <div class="col-4">
                         <label for="placa" class="form-label">Placa </label>
-                        <input type="placa" class="form-control" name="placa" id="placa" placeholder="Placa" required>
+                        <input type="number" class="form-control" name="placa" id="placa" placeholder="Placa" required>
                     </div>
                     <div class="col-8">
                         <label for="usuario" class="form-label">Usuário </label>
-                        <input type="usuario" class="form-control" name="usuario" id="usuario" placeholder="Usuário" required>
+                        <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Usuário" required>
                     </div>
                 </div>
 
@@ -83,18 +84,18 @@
                 <div class="row gy-md-2">
                 <div class="col-4">
                     <label for="dt_saida" class="form-label">Data da saida</label>
-                    <input type="dt_saida" class="form-control" name="dt_saida" id="dt_saida" placeholder="00/00/00" required>
+                    <input type="date" class="form-control" name="dt_saida" id="dt_saida" placeholder="00/00/00" required>
                 </div>
                 <div class="col-4">
                     <label for="hr_saida" class="form-label">Hora da saida </label>
-                    <input type="hr_saida" class="form-control" name="hr_saida" id="hr_saida" placeholder="00:00" required>
+                    <input type="time" class="form-control" name="hr_saida" id="hr_saida" placeholder="00:00" required>
                 </div>
                 </div>
 
                 <div class="row gy-md-2">
                 <div class="col-4">
                     <label for="km_saida" class="form-label">Quilometragem </label>
-                    <input type="km_saida" class="form-control" name="km_saida" id="km_saida" value="000" required>
+                    <input type="number" class="form-control" name="km_saida" id="km_saida" value="000" required>
                 </div>
 
                 <div class="col-md-4">
@@ -127,18 +128,18 @@
                 <div class="row gy-md-2">
                     <div class="col-4">
                         <label for="dt_retorno" class="form-label">Data da Retorno</label>
-                        <input type="dt_retorno" class="form-control" name="dt_retorno" id="dt_retorno" placeholder="00/00/00" required>
+                        <input type="date" class="form-control" name="dt_retorno" id="dt_retorno" placeholder="00/00/00" required>
                     </div>
                     <div class="col-4">
                         <label for="hr_retorno" class="form-label">Hora da Retorno </label>
-                        <input type="hr_retorno" class="form-control" name="hr_retorno" id="hr_retorno" placeholder="00:00" required>
+                        <input type="time" class="form-control" name="hr_retorno" id="hr_retorno" placeholder="00:00" required>
                     </div>
                 </div>
 
                 <div class="row gy-md-2">
                     <div class="col-4">
                         <label for="km_retorno" class="form-label">Quilometragem </label>
-                        <input type="km_retorno" class="form-control" name="km_retorno" id="km_retorno" value="000" required>
+                        <input type="number" class="form-control" name="km_retorno" id="km_retorno" value="000" required>
                     </div>
 
                     <div class="col-md-4">
@@ -181,7 +182,7 @@
                                 </label>
                             </div>
                             <div class="form-check col-2">
-                                <input class="form-check-input" type="radio" name="radio_farois" id="farois2" value="Não">
+                                <input class="form-check-input" type="radio" name="radio_farois" id="farois2" value="Nao">
                                 <label class="form-check-label" >
                                     Não
                                 </label>
@@ -210,7 +211,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_calotas" id="Calotas2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_calotas" id="Calotas2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -239,7 +240,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_rodas" id="Rodas3" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_rodas" id="Rodas3" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -268,7 +269,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_alarme" id="Alarme2" value="não">
+                              <input class="form-check-input" type="radio" name="radio_alarme" id="Alarme2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -297,7 +298,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_acendedor" id="Acendedor2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_acendedor" id="Acendedor2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -326,7 +327,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_tag_placa" id="TAG2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_tag_placa" id="TAG2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -355,7 +356,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_cartao_combus" id="cartao2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_cartao_combus" id="cartao2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -384,7 +385,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_radio_cd" id="radio2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_radio_cd" id="radio2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -413,7 +414,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_multimidia" id="multimidia2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_multimidia" id="multimidia2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -442,7 +443,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_encosto_dvd" id="dvd2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_encosto_dvd" id="dvd2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -471,7 +472,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_tapete" id="Tapetes2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_tapete" id="Tapetes2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -500,7 +501,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_manual" id="Manual2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_manual" id="Manual2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -529,7 +530,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_dut" id="DUT2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_dut" id="DUT2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -558,7 +559,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_extintor" id="Extintor2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_extintor" id="Extintor2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -587,7 +588,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_estepe" id="Estepe2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_estepe" id="Estepe2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -616,7 +617,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_macaco" id="farois2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_macaco" id="farois2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -645,7 +646,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_triangulo" id="farois2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_triangulo" id="farois2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -674,7 +675,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_chave_roda" id="farois2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_chave_roda" id="farois2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
@@ -703,7 +704,7 @@
                               </label>
                               </div>
                               <div class="form-check col-2">
-                              <input class="form-check-input" type="radio" name="radio_chave_reserva" id="farois2" value="Não">
+                              <input class="form-check-input" type="radio" name="radio_chave_reserva" id="farois2" value="Nao">
                               <label class="form-check-label" >
                                   Não
                               </label>
